@@ -1,0 +1,16 @@
+{
+    "contents" : "#' Song Data\n#' \n#' The \"song\" data set from Critchlow et al. (1991). Ninety-eight students \n#' were asked to rank 5 words, (1) score, (2) instrument, (3) solo, (4) benediction \n#' and (5) suit, according to the association with the word \"song\". However, \n#' the available data given in Critchlow et al. (1991) is in grouped format and \n#' the ranking of 15 students are unknown and hence discarded, resulting in 83 \n#' rankings. \n#' \n#' \\itemize{\n#'   \\item freq.    The frequencies of each student's ordering.\n#'   \\item order1~order5    The ordering of the five words. (1) score, (2) instrument, (3) solo, (4) benediction and (5) suit\n#'   \n#' }\n#' \n#' @docType data\n#' @keywords datasets\n#' @format A data frame with 13 rows and 6 columns\n#' @name Song\nNULL\n",
+    "created" : 1402633540525.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "489091641",
+    "id" : "B561CD6",
+    "lastKnownWriteTime" : 1402634419,
+    "path" : "D:/Dropbox/StatMethRank/R/Song.R",
+    "project_path" : "R/Song.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

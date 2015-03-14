@@ -1,0 +1,16 @@
+{
+    "contents" : "my_download.file <- function(X)\n{\n    # X为两列，第一列为url，第二列为下载的目标文件名\n    # 防止下载失败，重复下载尝试至多10次\n    for (i in 1:10)\n    {\n        download.file(X[1], X[2])\n        if (file.info(X[2])$size > 1000) break\n    }\n}\n#----\ntemp = read.csv(\"C:/users/zfy1989lee/desktop/urlIN.csv\", stringsAsFactors = FALSE)\n# 请先构建好sina 年度报告html文件夹 代码从上面找\n# 开始下载\napply(cbind(temp$vecURL, temp$vecHTML), 1, my_download.file)",
+    "created" : 1402836282424.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1397182546",
+    "id" : "C601AFC",
+    "lastKnownWriteTime" : 214117648,
+    "path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

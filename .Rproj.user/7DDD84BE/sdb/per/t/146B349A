@@ -1,0 +1,16 @@
+{
+    "contents" : "#' Convert raw ranking data(case form) to ranking data with rank frequencies\n#'\n#' Convert raw ranking data(case form) to ranking data with rank frequencies\n#'\n#' @param x A data frame or a matrix(case form), each row is a rank.\n#' @return A data frame, each row contains a rank and the corresponding frequency.\n#' @export\n#' @author Li Qinglong <liqinglong0830@@163.com>\n#' @examples\n#' data(APA)\n#' cases = freq2case(APA, freq.col = 1)\n#' freqs = case2freq(cases)\ncase2freq <- function (x) \n{\n\tnCol = dim(x)[2]\n\tDF = as.data.frame(table(x), stringAsFactors = TRUE)\n\tDF = DF[DF[, nCol + 1] != 0, ]\n\tDF = as.data.frame(DF)\n\trow.names(DF) = 1:nrow(DF)\n\treturn(DF)\n}\n\n",
+    "created" : 1402374657428.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2881304919",
+    "id" : "146B349A",
+    "lastKnownWriteTime" : 1402325358,
+    "path" : "D:/Dropbox/StatMethRank/R/case2freq.R",
+    "project_path" : "R/case2freq.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

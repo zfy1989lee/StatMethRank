@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: StatMethRank\nType: Package\nTitle: Statistical Methods for Ranking Data\nVersion: 1.1\nDate: 2015-03-14\nAuthor: Qinglong Li\nMaintainer: Qinglong Li <liqinglong0830@163.com>\nDescription: Functions and datasets to support Statistical Methods for Ranking Data by Mayer Alvo and Philip L.H. Yu(2014). In this packages, smaller ranks stand for more prefered items.\nDepends:\n\tMASS,\n    utils,\n    rjags,\n    pmr\nLicense: GPL (>= 2)\nImports: Rcpp (>= 0.11.5)\nLinkingTo: Rcpp\n",
+    "created" : 1426285214816.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1731323077",
+    "id" : "48957F67",
+    "lastKnownWriteTime" : 1426307553,
+    "path" : "E:/Dropbox/StatMethRank/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

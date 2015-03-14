@@ -1,0 +1,16 @@
+{
+    "contents" : "#include <Rcpp.h> \nusing namespace Rcpp;\n\n// [[Rcpp::export]]\nNumericVector rcpp_my_test(NumericVector a, NumericVector b) {\n  int na = a.size(), nb = b.size();\n  int nab = na + nb - 1;\n  NumericVector xab(nab);\n  for (int i = 0; i < na; i++)\n    for (int j = 0; j < nb; j++)\n      xab[i + j] += a[i] * b[j];\n  return xab;\n}\n",
+    "created" : 1426285738345.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2679465388",
+    "id" : "E3CDD762",
+    "lastKnownWriteTime" : 1426284153,
+    "path" : "E:/Dropbox/StatMethRank/src/rcpp_my_test.cpp",
+    "project_path" : "src/rcpp_my_test.cpp",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "cpp"
+}

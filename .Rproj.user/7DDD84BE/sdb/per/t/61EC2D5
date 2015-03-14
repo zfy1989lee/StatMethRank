@@ -1,0 +1,16 @@
+{
+    "contents" : "#' Convert frequency table to raw data \n#'\n#' Convert frequency table to raw data(case form). This is a useful function to \n#' convert the data written by Michael Friendly.\n#'\n#' @param x A table object, or a data frame in frequency form containing ranks and one\n#' numeric variable representing the frequency for that rank.\n#' @param var.names A list of variable names for the factors, if you wish to override those already in\n#' the table.\n#' @param freq.name The name of the frequency variable in the table.\n#' @param freq.col The column index of the frequencies.\n#' @param ... Other arguments passed down to type.convert.\n#' @return A data frame containing the factors in the table and as many observations as are represented by the\n#' total of the freq variable.\n#' @export\n#' @author Michael Friendly, edited by Li Qinglong <liqinglong0830@@163.com>\n#' @examples\n#' data(APA)\n#' cases = freq2case(APA, freq.col = 1)\n#' freqs = case2freq(cases)\n#' @references Posted on R-Help, Jan 20, 2009. http://tolstoy.newcastle.edu.au/R/e6/help/09/01/1873.\n#' html\n\n\nfreq2case <- function (x, var.names = NULL, freq.name = \"Freq\", freq.col = NULL, ...) \n{\n\t# Convert frequency table to raw data \n\t# source code : expand.dft function of vcdExtra package, Author: Michael Friendly\n\t# convert frequency table to raw data \n    # Editted by Li Qinglong\n    \n    if (inherits(x, \"table\")) \n        x <- as.data.frame.table(x, responseName = freq.name)\n    if (is.null(freq.col))\n        freq.col <- which(colnames(x) == freq.name)\n    if (length(freq.col) == 0) \n        stop(paste(sQuote(\"freq\"), \"not found in column names\"))\n    DF <- sapply(1:nrow(x), function(i) x[rep(i, each = x[i, \n        freq.col]), ], simplify = FALSE)\n    DF <- do.call(\"rbind\", DF)[, -freq.col]\n    for (i in 1:ncol(DF)) {\n        DF[[i]] <- type.convert(as.character(DF[[i]]), ...)\n    }\n    rownames(DF) <- NULL\n    if (!is.null(var.names)) {\n        if (length(var.names) < dim(DF)[2]) {\n            stop(paste(\"Too few\", sQuote(\"var.names\"), \"given.\"))\n        }\n        else if (length(var.names) > dim(DF)[2]) {\n            stop(paste(\"Too many\", sQuote(\"var.names\"), \"given.\"))\n        }\n        else {\n            names(DF) <- var.names\n        }\n    }\n    return(DF)\n}",
+    "created" : 1402374673389.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3343111673",
+    "id" : "61EC2D5",
+    "lastKnownWriteTime" : 1402374864,
+    "path" : "D:/Dropbox/StatMethRank/R/freq2case.R",
+    "project_path" : "R/freq2case.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "\\name{StatMethRank-package}\n\\alias{StatMethRank-package}\n\\alias{StatMethRank}\n\\docType{package}\n\\title{\nStatistical Methods for Ranking Data\n}\n\\description{\nStatistical Methods for Ranking Data\n}\n\\details{\n\\tabular{ll}{\nPackage: \\tab StatMethRank\\cr\nType: \\tab Package\\cr\nVersion: \\tab 1.0\\cr\nDate: \\tab 2014-05-28\\cr\nLicense: \\tab GPL-2\\cr\n}\nFunctions and datasets to support Alvo and Yu (2014), 'Statistical Methods for Ranking Data'\n}\n\\author{\nLi Qinglong\n\nMaintainer: Li Qinglong <liqinglong0830@163.com>\n}\n\\references{\nStatistical Methods for Ranking Data, Alvo and Yu (2014), (\\url{http://web.hku.hk/~plhyu/StatMethRank/})\n}\n\n\\keyword{ ranking }\n\\seealso{\npmr   (\\url{http://cran.r-project.org/web/packages/pmr/index.html})\n}\n",
+    "created" : 1402375755497.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2446437363",
+    "id" : "B0B9A817",
+    "lastKnownWriteTime" : 1402375800,
+    "path" : "D:/Dropbox/StatMethRank/man/StatMethRank-package.Rd",
+    "project_path" : "man/StatMethRank-package.Rd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_doc"
+}

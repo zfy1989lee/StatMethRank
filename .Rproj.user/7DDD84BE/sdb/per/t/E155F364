@@ -1,0 +1,16 @@
+{
+    "contents" : "import(MASS)\nimport(pmr)\nimport(rjags)\n\nexport(agreement.test)\nexport(compatible.rankings)\nexport(freq2case)\nexport(case2freq)\nexport(generate.combs)\nexport(generate.perms)\nexport(incomplete.rankings)\nexport(independence.test)\nexport(interaction.test)\nexport(is.compatible)\nexport(repmat)\nexport(mvnos.model)\nexport(msci)\nexport(wdmat)\nexport(mwdbm)\n",
+    "created" : 1402375330674.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4073798353",
+    "id" : "E155F364",
+    "lastKnownWriteTime" : 1402803262,
+    "path" : "D:/Dropbox/StatMethRank/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_namespace"
+}

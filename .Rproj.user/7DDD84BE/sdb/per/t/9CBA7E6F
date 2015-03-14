@@ -1,0 +1,16 @@
+{
+    "contents" : "#' American Psychological Association Election Data\n#' \n#' In 1980, the American Psychological Association conducted an election at which five candidates (A, B, C, D and E) were \n#' running  for president and voters were asked to rank order all of the candidates. Among those voters, 5738 gave complete \n#' rankings. These complete rankings are considered here. The data are given in Diaconis (1988). Suppose that lower rank \n#' implies more favorable.\n#' \n#' \\itemize{\n#'   \\item freq.    The frequencies of each distinguish ranking.\n#'   \\item A, B, C, D and E.    The ranks of the five candidates. \n#'   \n#' }\n#' \n#' @docType data\n#' @keywords datasets\n#' @format A data frame with 120 rows and 6 variables\n#' @name APA\nNULL\n\n",
+    "created" : 1402375026863.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1839483209",
+    "id" : "9CBA7E6F",
+    "lastKnownWriteTime" : 1402298314,
+    "path" : "D:/Dropbox/StatMethRank/R/APA.R",
+    "project_path" : "R/APA.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

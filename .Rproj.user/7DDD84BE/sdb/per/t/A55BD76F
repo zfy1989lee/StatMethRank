@@ -1,0 +1,16 @@
+{
+    "contents" : "#' Data on the big four EPL Teams\n#' \n#' The English Premier League (EPL) is a famous professional league for association \n#' soccer clubs in the UK. The so-called \"Big Four\" soccer clubs are Arsenal, Chelsea, \n#' Liverpool, and Manchester United, have dominated the top four spots since the 1996-1997 \n#' season. Wikipedia documented the results of the \"Big Four\" since the start of the \n#' Premier League in the 1992-93 season. The rankings of these four English Premier \n#' League teams from the 1992-93 season to the2012-13 season are listed in this data frame. \n#' The first row of the data means that there is one season that Arsenal ranked at the \n#' top of EPL, Chelsea the second, Manchester United the third and Liverpool the fourth. \n#' We may test the hypothesis that the rankings observed are random. On the other hand, \n#' through the use of modeling we may try to determine how the rankings cluster.\n#' \n#' \\itemize{\n#'   \\item Arsenal, Chelsea, Liverpool, and Manchester United. The ranks of the \"Big Four\" clubs\n#'   \n#' }\n#' \n#' @docType data\n#' @keywords datasets\n#' @format A data frame with 21 rows and 4 variables\n#' @name big4year\nNULL\n\n",
+    "created" : 1402374924948.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2718561680",
+    "id" : "A55BD76F",
+    "lastKnownWriteTime" : 1402375235,
+    "path" : "D:/Dropbox/StatMethRank/R/big4year.R",
+    "project_path" : "R/big4year.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
